@@ -9,7 +9,13 @@
     --peach-color: #fccdb9;
     --light-blush: #ffe6ff;
     --med-blush: #fcb8d7;
-    --blush-color: #F5978d;
+    --blush-color: #f5978d;
+    --sunflower: #ffd281;
+    --med-sunflower: #ffedce;
+    --light-sunflower: #fff9ce;
+    --dark-green: #637b25;
+    --med-green: #b4d168;
+    --light-green: #92b637;
     --white: rgb(255, 255, 255);
     --black: rgba(0, 0, 0, 0.3);
 }
@@ -199,6 +205,28 @@ button:hover, button:focus, .button:hover, .button:focus {
         fill: var(--blush-color);
     }
 }
+@keyframes sunflower{
+  0%{
+    fill: var(--light-sunflower);
+  }
+  50%{
+    fill: var(--med-sunflower);
+  }
+  100%{
+    fill: var(--sunflower);
+  }
+}
+@keyframes dark-green{
+  0%{
+    fill: var(--light-green);
+  }
+  50%{
+    fill: var(--med-green);
+  }
+  100%{
+    fill: var(--dark-green);
+  }
+}
 .peach{
     animation-duration: 4s;
     animation-name: peach-color;
@@ -214,4 +242,18 @@ button:hover, button:focus, .button:hover, .button:focus {
     animation-direction: alternate;
     animation-timing-function: linear;
 
+}
+.sun_flower{
+  animation-duration: 4s;
+  animation-name: sunflower;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.dark_green{
+  animation-duration: 4s;
+  animation-name: dark-green;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
