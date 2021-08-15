@@ -99,7 +99,7 @@ div {
   width: 100px;
   margin: 0 50px auto;
   height: auto;
-  border-radius: 75%;
+  border-radius: 5px;
 }
 
 h1 {

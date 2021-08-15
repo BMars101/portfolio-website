@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="page-header">
-        <img src="img/logo.png" alt="logo" class="page-header__item">
+        <h1 class="name_logo">Beth Day</h1>
         <nav class="page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
@@ -30,60 +30,92 @@
         </nav>
     </header>
     <section>
-        <h1>Work</h1>
+        <h1 class="work_heading">My Work</h1>
         <div class="grid">
-            <!--Grid items will go here-->
             <div class="grid__item">
-                <h2>Progressive Web App</h2>
-                <p>
-                Using the Google calendar API, I created a Progressive Web App that displays upcoming web development workshops around the world. Simply input the nearest major city to see events near you!
-                </p>
-                <a href="https://bmars101.github.io/meet" target="_blank">See project on GitHub</a>
+                
+                    <h3 class="project_title">The Meet App</h3>
+                    <p class="project_description">
+                    A serverless web app using AWS lambda and the Google API. This Progressive Web App displays upcoming web development workshops around the world. 
+                    <span>*Disclaimer* This app is in testing mode, if you would like to test the app, please provide a gmail address on my contact page and I will add it to the list of testers!</span>
+                    </p>
+                    <a href="https://bmars101.github.io/meet" target="_blank" class="project_link">View meet app</a>
+                
             </div>
             <div class="grid__item">
-                <h2>MyFlix Application</h2>
-                <p>
-                    Here is a simple movie app built with React in which you can sign in and register as a user as well as update a favorite movies list. Choose your favorites out of 10 movie options!
-                </p>
-                <a href="https://github.com/BMars101/myFlix-client" target="_blank">Check it out on GitHub</a>
+                
+                    <h3 class="project_title">MyFlix Application</h3>
+                    <p class="project_description">
+                        A simple movie app built with React. This project uses JSON Web Tokens for secure registration and sign-in authorization.
+                    </p>
+                    <a href="https://github.com/BMars101/myFlix-client" target="_blank" class="project_link">Check out repository on GitHub</a>
+                    
             </div>
             <div class="grid__item">
-                <h2>RESTful API Node.js</h2>
-                <p>
-                    This is the RESTful API I created for the MyFlix web application.
-                </p>
-                <a href="https://github.com/BMars101/movie_api" target="_blank">Check it out on GitHub</a>
+                
+                    <h3 class="project_title">RESTful API Node.js</h3>
+                    <p class="project_description">
+                        This is the RESTful API I created for the MyFlix web application.
+                    </p>
+                    <a href="https://github.com/BMars101/movie_api" target="_blank" class="project_link">Check it out on GitHub</a>
+                
             </div>
             <div class="grid__item">
-                <h2>Simple JS App</h2>
-                <p>
-                    Here is a simple JS app demonstrating use of one of the web's most popular APIs!
-                    Take a look and learn more about the pokemon characters!
-                </p>
-                <a href="https://bmars101.github.io/simple-js-app/" target="_blank">Check out my pokedex!</a>
+                
+                    <h3 class="project_title">Simple JS App</h3>
+                        <p class="project_description">
+                            Here is a simple JS app demonstrating use of one of the web's most popular APIs - the Pokedex!
+                            Take a look and learn more about the pokemon characters!
+                        </p>
+                        <a href="https://bmars101.github.io/simple-js-app/" target="_blank" class="project_link">View my pokedex</a>
+                              
             </div>
             <div class="grid__item">
-                <h2>Medium Blog</h2>
-                <p>
-                    I am writing on medium
-                </p>
-                <a href="#">See my blog post</a>
+                
+                    <h3 class="project_title">Simple Calculator</h3>
+                    <p class="project_description">
+                        A beginner project practicing JavaScript and CSS grid layout.
+                    </p>
+                    <a href="#" class="project_link">View calculator</a>
+                
             </div>
             <div class="grid__item">
-                <h2>Your Project</h2>
-                <p>
-                    I can help with the production of front-end and back-end projects using React.js, JavaScript, Java, JavaFX, HTML and CSS.  I am happy to learn other technologies as needed!
-                </p>
-                <a href="#">Contact me</a>
+                
+                    <h3 class="project_title">Your Project</h3>
+                    <p class="project_description">
+                        I can help with the production of front-end and back-end projects using React.js, JavaScript, HTML and CSS.  I am happy to learn other technologies as needed!
+                    </p>
+                    <a href="contact.html" class="project_link">Contact me</a>
+                              
             </div>
         </div>
     </section>
-    <footer class="page-footer">
+    <footer class="work_page-footer">
         <p>Find me on</p>
-        <div>
-            <img src="img/github.svg" height= "30px" width= "30px" alt="GitHub icon">
-            <img src="img/instagram.svg" width="30px" height="30px" alt="Instagram icon">
-            <img src="img/linkedin.svg" alt="LinkedIn icon">
+        <div class="social-media">
+          <a href="https://github.com/BMars101" target="_blank">
+            <img 
+                src="img/github.svg" 
+                width="30px" 
+                height="30px" 
+                alt="GitHub icon" 
+                class="social_icon"></a>
+          <a href="https://instagram.com/__10_01__/" target="_blank" class="insta">
+            <img
+                src="img/instagram.svg"
+                width="30px"
+                height="30px"
+                alt="Instagram icon"
+                class="social_icon"
+          />
+            </a>
+            <a href="https://www.linkedin.com/in/beth-marshall-57424810b/" target="_blank">
+            <img 
+                src="img/linkedin.svg" 
+                alt="LinkedIn icon" 
+                class="social_icon"
+                />
+            </a>
         </div>
     </footer>
     <script src="js/tota11y.min.js"></script>

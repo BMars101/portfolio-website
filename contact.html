@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="page-header">
-        <img src="img/logo.png" alt="logo" class="page-header__item">
+        <h1 class="name_logo">Beth Day</h1>
         <nav class="page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
@@ -29,38 +29,55 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <form action="" method="post" id="contact-form">
-            <label class="standard-label" for="contact-email">E-mail: </label>
-            <input type="email" id="contact-email" required>
+    <h1 class="contact_header">Contact Me</h1> 
+    <div class="contact-container">
+         
+        <div>
+            <form action="mailto_handler.php" method="post" id="contact-form">
+                <label class="standard-lable" name="name" for="name">Name: </label>
+                <input type="text" required>
+                <label class="standard-label" name="email" for="contact-email">E-mail: </label>
+                <input type="email" id="contact-email" required>
+                <label class="standard-label" for="msg">Message: </label>
+                <textarea maxlength="240" id="msg" name="msg" required></textarea>
 
-            <label class="standard-lable" for="telephone">Telephone: </label>
-            <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}
-            " id="telephone" required>
-
-            <label class="standard-label" for="message">Message: </label>
-            <textarea maxlength="240" id="message" required></textarea>
-
-            <input type="submit" value ="Send message">
-        </form>
-    </div>
-    <div>
-        <h1 id="contact">Contact Me</h1>
-            Beth Day<br>
-            Philadelphia Area<br>
-            <br>
-                <a href="mailto:beth.ellieday@gmail.com">beth.ellieday@gmail.com</a><br>
-                <a href="skype:live:.cid.ad5fe3a10a5badb9">Skype</a><br>
-                <a href="6104579081">Phone</a>
+                <input type="submit" name="submit" value ="Send message">
+            </form>
+        </div>
+        <div id="contact-me">
+                Beth Day<br>
+                Philadelphia Area<br>
+                <br>
+                    <a href="mailto:bethmarsh1018@gmail.com">bethmarsh1018@gmail.com</a>
+        </div>
     </div>
     <footer class="page-footer">
         <p>Find me on</p>
-        <div>
-            <img src="img/github.svg" width="30px" height="30px" alt="GitHub icon">
-            <img src="img/instagram.svg" width="30px" height="30px" alt="Instagram icon">
-            <img src="img/linkedin.svg" alt="LinkedIn icon">
+        <div class="social-media">
+          <a href="https://github.com/BMars101" target="_blank">
+            <img 
+                src="img/github.svg" 
+                width="30px" 
+                height="30px" 
+                alt="GitHub icon" 
+                class="social_icon"></a>
+          <a href="https://instagram.com/__10_01__/" target="_blank" class="insta">
+            <img
+                src="img/instagram.svg"
+                width="30px"
+                height="30px"
+                alt="Instagram icon"
+                class="social_icon"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/beth-marshall-57424810b/" target="_blank">
+          <img 
+            src="img/linkedin.svg" 
+            alt="LinkedIn icon" 
+            class="social_icon"
+            />
+        </a>
         </div>
-    </footer>
-    <script src="js/tota11y.min.js"></script>
+      </footer>
 </body>
 </html>
