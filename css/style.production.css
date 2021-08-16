@@ -258,7 +258,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .page-footer{
     clear: both;
-    position: fixed;
     left: 0;
     bottom: 0;
     width:100%;
