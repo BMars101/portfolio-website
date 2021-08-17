@@ -32,15 +32,14 @@
     <h1 class="contact_header">Contact Me</h1> 
     <div class="contact-container">
          
-        <div>
-            <form action="mailto_handler.php" method="post" id="contact-form">
-                <label class="standard-lable" name="name" for="name">Name: </label>
-                <input type="text" required>
-                <label class="standard-label" name="email" for="contact-email">E-mail: </label>
-                <input type="email" id="contact-email" required>
+        <div class="contact-input">
+            <form action="https://formsubmit.co/bethmarsh1018@gmail.com" method="POST" id="contact-form">
+                <label class="standard-lable" for="name">Name: </label>
+                <input type="text" name="name" required>
+                <label class="standard-label"  for="contact-email">E-mail: </label>
+                <input type="email" name="email" required>
                 <label class="standard-label" for="msg">Message: </label>
                 <textarea maxlength="240" id="msg" name="msg" required></textarea>
-
                 <input type="submit" name="submit" value ="Send message">
             </form>
         </div>
@@ -79,5 +78,42 @@
         </a>
         </div>
       </footer>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+      <script>
+          const constraints = {
+              name: {
+                  presence: { allowEmpty: false }
+              },
+              email: {
+                  presence: { allowEmpty: false },
+                  email: true 
+              },
+              msg: {
+                  presence: { allowEmpty: false }
+              }
+          };
+
+          const form = document.getElementById('contact-form');
+
+          form.addEventListener('submit', function(event){
+              const formValues = {
+                  name: form.elements.name.value,
+                  email: form.elements.email.value,
+                  msg: form.elements.msg.value 
+              };
+
+              const errors = validate(formValues, constraints);
+
+              if(errors){
+                  event.preventDefault();
+                  const errorMessage = Object
+                        .values(errors)
+                        .map(function (fieldValues) { return fieldValues.join(', ') })
+                        .join("\n");
+
+                    alert(errorMessage);
+              }
+          }, false);
+      </script>
 </body>
 </html>
