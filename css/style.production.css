@@ -261,15 +261,6 @@ tr {
     color: rgb(51, 48, 48);
     border-radius: 10px;
 }
-.thank-you {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center
-}
-.thank-you_message{
-    color:#025a51;
-}
 .third__head, .second__head, .years__exp, .experience__level{
     padding-left: 10px;
 }
